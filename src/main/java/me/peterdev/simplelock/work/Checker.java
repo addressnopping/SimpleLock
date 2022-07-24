@@ -1,7 +1,5 @@
 package me.peterdev.simplelock.work;
 
-import jdk.nashorn.internal.ir.debug.ClassHistogramElement;
-
 import java.net.URL;
 import java.util.Base64;
 import java.util.Scanner;
