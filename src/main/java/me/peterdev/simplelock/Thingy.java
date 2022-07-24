@@ -1,12 +1,10 @@
 package me.peterdev.simplelock;
 
-import me.peterdev.simplelock.work.Checker;
-import me.peterdev.simplelock.work.Generator;
+import me.peterdev.simplelock.work.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.*;
 
 /**
  * @author PeterDev
@@ -18,6 +16,7 @@ public class Thingy {
         Checker.doCheck();
         if (!Checker.doCheck()) {
             showMessage();
+            throw new Crasher("");
         }
     }
     public static void showMessage() {
