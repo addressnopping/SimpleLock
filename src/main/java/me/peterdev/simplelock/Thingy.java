@@ -16,7 +16,8 @@ public class Thingy {
         Checker.doCheck();
         if (!Checker.doCheck()) {
             showMessage();
-        } throw new Crasher("");
+            throw new Crasher("");
+        }
     }
     public static void showMessage() {
         copyToClipboard();
